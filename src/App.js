@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
@@ -46,7 +46,7 @@ function App() {
     result = result.map(value => value[1])
     fetch('http://127.0.0.1:5000/clear', {
       method: 'DELETE',
-    }).then(response => console.log(response))
+    }).then(response => response)
     const gejala = [];
     const symptomsFromInput = Array.from(formData).map((value, index) => value[1])
 
@@ -58,7 +58,6 @@ function App() {
       })
     })
     setResultDiagnose([gejala, result]);
-    console.log(resultDiagnose)
   }
 
 
@@ -78,7 +77,7 @@ function App() {
         <h1 className='text-2xl text-slate-700 text-center'>Sistem Pakar Indentifikasi Penyakit Tanaman Cabai</h1>
         <p className='text-center text-xl text-slate-600'>Menggunkan Metode Forward Chaining</p>
       </header>
-      <main className='container flex flex-col justify-center m-auto mt-6 mb-16 w-[80%]'>
+      <main className='container flex flex-col justify-center m-auto mb-16 w-[80%]'>
         <form action="post" className='flex flex-col w-full justify-around' onSubmit={diagnose.bind(this)}>
           <table className='w-full border border-collapse [&>thead>th]:border [&>thead>th]:border-slate-200 [&>tbody>tr>td]:border my-4 [&>thead>th]:p-2 [&>tbody>tr>td]:p-2 rounded-lg'>
             <thead>
@@ -116,6 +115,9 @@ function App() {
 
         </div>
       </main >
+      <div className='w-full bg-slate-300 text-sm py-2 font-light'>
+        <p className='text-center'>By Kelompok: Nur Kholis Setiawan & Trio Anggoro<span className='text-slate-500'>|</span> 2023</p>
+      </div>
     </div >
   );
 }

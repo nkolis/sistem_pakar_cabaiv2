@@ -7,6 +7,7 @@ app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "http://localhost:5000"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 
+
 symptoms = [
     ['G001', 'Akar tanaman layu berjamur'],
     ['G002', 'Bercak bulat panjang berwarna coklat kehitaman seperti terbakar Pada Buah'],
