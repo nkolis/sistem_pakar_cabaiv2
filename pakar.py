@@ -86,8 +86,11 @@ def clear():
 
 
 def run_server():
+    port = 5000
+    print(
+        f"Silakan akses aplikasi ->: http://localhost:{port} atau http://127.0.0.1:{port}")
     if __name__ == '__main__':
-        app.run(debug=False, port=5000)
+        app.run(debug=False, port=port)
 
 ####################################### Mode Tampilan Website #######################################
 
@@ -217,7 +220,7 @@ def init():
     print("="*15+'Sistem Pakar Indetifikasi Penyakit Tanaman Cabai Metode Forward Chaining'+"="*15+'\n')
     print("Kelompok: ")
     print("1. Nurkholis Setiawan (2102020032)")
-    print("1. Trio Anggoro (2102020031)\n")
+    print("2. Trio Anggoro (2102020031)\n")
     print('Silakan pilih mode tampilan aplikasi : ')
     print('1. Website')
     print('2. Command Line Interface (CLI)')

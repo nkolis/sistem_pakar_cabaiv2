@@ -220,7 +220,7 @@ def init():
     print("="*15+'Sistem Pakar Indetifikasi Penyakit Tanaman Cabai Metode Forward Chaining'+"="*15+'\n')
     print("Kelompok: ")
     print("1. Nurkholis Setiawan (2102020032)")
-    print("1. Trio Anggoro (2102020031)\n")
+    print("2. Trio Anggoro (2102020031)\n")
     print('Silakan pilih mode tampilan aplikasi : ')
     print('1. Website')
     print('2. Command Line Interface (CLI)')
