@@ -86,8 +86,11 @@ def clear():
 
 
 def run_server():
+    port = 5000
+    print(
+        f"Silakan akses aplikasi ->: http://localhost:{port} atau http://127.0.0.1:{port}")
     if __name__ == '__main__':
-        app.run(debug=False, port=5000)
+        app.run(debug=False, port=port)
 
 ####################################### Mode Tampilan Website #######################################
 
